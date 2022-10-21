@@ -1,2 +1,6 @@
-# HFO-detection-and-cross-validation
+HFO Dataset
+High frequency oscillations (HFOs) are quasi-periodic intracranial EEG transients with durations on the order of tens of milliseconds and peak frequencies in the range of 80 to 500 Hz. There has been considerable interest among the epilepsy research community in the potential of these signals as biomarkers for epileptogenic networks.
+
 We will explore a dataset of candidate HFOs detected using the algorithm of Staba et al. The raw recordings from which this dataset arises come from a human subject with mesial temporal lobe epilepsy and were contributed by the laboratory of Dr. Greg Worrell at the Mayo Clinic in Rochester, MN.
+
+The dataset I521_A0004_D001 contains raw HFO clips that are normalized to zero mean and unit standard deviation but are otherwise unprocessed. The raw dataset contains two channels of data: Test_raw_norm and Train_raw_norm, storing raw testing and training sets of HFO clips respectively. The raw dataset also contains two annotation layers: Testing windows and Training windows, storing HFO clip start and stop times (in microseconds) for each of the two channels above. Annotations contain the classification by an "expert" reviewer (i.e., a doctor) of each candidate HFO as either an HFO (2) or an artifact (1). On ieeg.org and upon downloading the annotations, you can view this in the "description" field.
